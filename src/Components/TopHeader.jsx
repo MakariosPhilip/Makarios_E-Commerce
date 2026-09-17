@@ -28,7 +28,6 @@ export default function TopHeader() {
     setIsOpen(false);
   };
 
-  // Fetch search results from dummyjson using axios
   useEffect(() => {
     if (!searchTerm.trim()) {
       setSearchResults([]);
@@ -54,7 +53,6 @@ export default function TopHeader() {
     console.log(searchResults);
   }, [searchTerm]);
 
-  // Close dropdown on click outside
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (searchRef.current && !searchRef.current.contains(e.target)) {
@@ -86,7 +84,6 @@ export default function TopHeader() {
             <IoSearchSharp/>
           </button>
 
-          {/* Search Dropdown Results */}
           {isOpen && (
             <div className="absolute top-[50px] left-0 w-full bg-white rounded-2xl shadow-xl border border-gray-200 max-h-[320px] overflow-y-auto z-50">
               {loading ? (

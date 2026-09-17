@@ -43,7 +43,7 @@ export default function SearchProducts() {
         {loading ? (
           <Loader />
         ) : products.length ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-3">
             {products.map((product) => (
               <Product
                 key={product.id}
