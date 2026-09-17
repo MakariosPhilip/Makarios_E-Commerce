@@ -5,7 +5,6 @@ import ShowProducts from "./Pages/ShowProducts";
 import CartPage from "./Pages/CartPage";
 import { Toaster } from "react-hot-toast";
 import HeartPage from "./Pages/HeartPage";
-import SearchProducts from "./Pages/SearchProducts";
 
 export default function App() {
   return (
@@ -17,8 +16,6 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/products/:id" element={<ProductDetails />}></Route>
-          <Route path="/search" element={<SearchProducts />}></Route>
-          <Route path="/search/:query" element={<SearchProducts />}></Route>
           <Route path="/category/:id" element={<ShowProducts />}></Route>
           <Route path="/cart" element={<CartPage />}></Route>
           <Route path="/heart" element={<HeartPage />}></Route>
