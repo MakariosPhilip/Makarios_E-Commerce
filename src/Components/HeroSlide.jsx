@@ -16,7 +16,7 @@ export default function HeroSlide() {
         loop={true} 
         pagination={true} 
         modules={[Autoplay,Pagination]} 
-        className="container m-6 text-black ">
+        className="container m-6 text-black">
         <SwiperSlide>
           <div className="absolute top-1/2 -translate-y-1/2 left-[5%]">
             <p className='mb-2 text-[1.5vw]'><i>introducing the new</i></p>

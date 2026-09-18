@@ -14,7 +14,7 @@ export default function CartPage() {
     <>
       <AllHeaders />
       <div className="text-black flex justify-center h-screen mt-75 md:mt-50 ">
-        <div className="border w-[80%] md:w-[60%] lg:w-[45%] h-[95%] p-3 border-black/15 shadow-2xl flex flex-col">
+        <div className="border w-[90%] md:w-[60%] lg:w-[45%] h-[95%] p-3 border-black/15 shadow-2xl flex flex-col ">
           <h1 className="text-[var(--main-color)] text-3xl font-bold p-4 border-b border-black/15 ">
             order summary
           </h1>
